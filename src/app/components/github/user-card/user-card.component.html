@@ -1,0 +1,27 @@
+<div class="search">
+  <form action="">
+    <input
+      type="text"
+      placeholder="Search GitHub users"
+      name="search"
+      [(ngModel)]="searchTerm"
+    />
+    <button (click)="searchUser()" >Search</button>
+  </form>
+</div>
+<div class="card-user" *ngIf="user.name != '', else noUser">
+  <img class="avatar" src="{{ user.avatar_url }}" alt="avatar" />
+  <div class="info">
+    <h1>{{ user.name }}</h1>
+    <p>{{ user.login }}</p>
+    <p>{{ user.bio }}</p>
+    <p>{{ user.location }}</p>
+    <p>{{ user.company }}</p>
+    <p>{{ user.blog }}</p>
+  </div>
+</div>
+<ng-template #noUser>
+  <div class="no-user">
+    <p>Search for a GitHub user</p>
+  </div>
+</ng-template>
