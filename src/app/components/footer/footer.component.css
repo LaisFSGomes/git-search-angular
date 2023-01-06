@@ -1,0 +1,10 @@
+footer {
+  background-color: #1D3557;
+  display: grid;
+  place-items: center;
+  color: #FFFFFF;
+  padding: 3%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7em;
+  letter-spacing: -0.1px;
+}
