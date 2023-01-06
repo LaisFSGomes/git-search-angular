@@ -3,6 +3,6 @@
   color: #ffffff;
   display: grid;
   place-items: center;
-  padding: 3%;
   font-family: 'Raleway', sans-serif;
+  height: 15vh;
 }
