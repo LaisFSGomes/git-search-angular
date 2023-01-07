@@ -1,7 +1,7 @@
 main {
   height: calc(100vh - 25vh);
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(180deg, #6a00f4 50%, #2d00f7 100%);
   padding: 0rem 15em;
 }
@@ -13,6 +13,11 @@ main {
 @media (max-width: 750px) {
   main {
     padding: 0rem 5em;
+  }
+}
+@media (max-width: 450px) {
+  main {
+    padding: 0rem 0.5em;
   }
 }
 

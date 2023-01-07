@@ -1,3 +1,4 @@
+import { User } from './components/github/interface';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'git-search-angular';
+  user: User = {
+  }
+  getTerm(takeUser: User) {
+    this.user = takeUser;
+  }
 }

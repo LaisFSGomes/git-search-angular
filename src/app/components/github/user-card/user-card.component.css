@@ -1,31 +1,7 @@
 * {
   font-family: "Raleway", sans-serif;
 }
-form {
-  display: flex;
-  margin: 2em 0em;
-}
-input {
-  width: 80%;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  height: 45px;
-  border: none;
-}
-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 14px 20px;
-  border: none;
-  cursor: pointer;
-  width: 20%;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-}
-button:hover {
-  background-color: #45a049;
-}
+
 .card-user {
   color: #FFFFFF;
   border: 1px solid #ccc;

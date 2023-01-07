@@ -1,5 +1,5 @@
 import { UserService } from './../user.service';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { User } from '../interface';
 
 @Component({
@@ -8,8 +8,8 @@ import { User } from '../interface';
   styleUrls: ['./user-card.component.css']
 })
 export class UserCardComponent {
-  searchTerm: string = '';
-  user: User = {
+
+  @Input() user: User = {
     login: '',
     avatar_url: '',
     name: '',
@@ -31,10 +31,4 @@ export class UserCardComponent {
       this.user = response;
     });
   }
-
-  searchUser() {
-    this.service.getUser(this.searchTerm).subscribe((response) => {
-      this.user = response;
-    });
-  };
 }

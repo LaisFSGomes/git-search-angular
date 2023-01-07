@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { UserCardComponent } from './components/github/user-card/user-card.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UserSearchComponent } from './components/github/user-search/user-search.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     UserCardComponent,
+    UserSearchComponent,
   ],
   imports: [
     BrowserModule,
